@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./Style/Images/PNG/favicon.png" />
+    <meta name="description" content="Bureau OCN FINANCE" />
+    <meta
+      name="Keywords"
+      content="Bureau OCN FINANCE, OCN FINANCE, Visualisation architecturale, ArchViz, Architectur, Visualisation 3D, 3D, 3D sénégal, Architectur sénégal,"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCN FINANCE</title>
+
+    <script
+      rel="preload"
+      src="https://aframe.io/releases/1.5.0/aframe.min.js"
+    ></script>
+    <script
+      rel="preload"
+      src="https://unpkg.com/aframe-event-set-component/dist/aframe-event-set-component.min.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./Style/Style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ########################################################################################### -->
+  </head>
+
+  <body>
+    <div class="the_description">Villa Sarr</div>
+    <div class="hover_loader_container">
+      <div class="hover_loader">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="link_to_archviz"
+      href="https://archviz-dakar.com/"
+      target="_blank"
+    >
+    </a>
+
+    <div class="The_Image_Back_Cover"></div>
+
+    <div class="the_blach_hover"></div>
+    <a-scene
+      id="the_scene"
+      the_scene
+      cursor="rayOrigin: mouse"
+      loading-screen="dotsColor:black; backgroundColor: #f1f1f1 "
+    >
+      <a-assets>
+        <img id="Arrow-1" src="./Style/Images/PNG/Arrow-1.png" />
+        <img id="Arrow-2" src="./Style/Images/PNG/Arrow-2.png" />
+        <img id="Scene-0" src="./Style/Images/Scene-0.jpg" />
+        <img id="Scene-1" src="./Style/Images/Scene-1.jpg" />
+        <img id="Scene-2" src="./Style/Images/Scene-2.jpg" />
+        <img id="Scene-3" src="./Style/Images/Scene-3.jpg" />
+        <img id="Scene-4" src="./Style/Images/Scene-4.jpg" />
+        <img id="Scene-5" src="./Style/Images/Scene-5.jpg" />
+        <img id="Scene-6" src="./Style/Images/Scene-6.jpg" />
+        <img id="Scene-7" src="./Style/Images/Scene-7.jpg" />
+        <img id="Scene-8" src="./Style/Images/Scene-8.jpg" />
+        <img id="Scene-8" src="./Style/Images/Scene-8.jpg" />
+        <img id="Scene-9" src="./Style/Images/Scene-9.jpg" />
+        <img id="Scene-10" src="./Style/Images/Scene-10.jpg" />
+      </a-assets>
+
+      <a-entity
+        laser-controls="hand: left"
+        raycaster="objects: [data-clickable] ; far: 500; lineColor: #23343b; lineOpacity: 0.5"
+      ></a-entity>
+      <a-entity
+        laser-controls="hand: right"
+        raycaster="objects: [data-clickable] ; far: 500; lineColor: #23343b; lineOpacity: 0.5"
+      ></a-entity>
+
+      <a-sky
+        id="image-360"
+        radius="500"
+        rotation="0 -90 0"
+        src="#Scene-0"
+        look-controls-invert-y="false"
+        animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
+        animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"
+      >
+      </a-sky>
+
+      <!-- ############################################################ -->
+      <!-- ############################################################ -->
+      <!-- ############################################################ -->
+      <!-- <a-entity camera="active: true ; zoom: 3"></a-entity> -->
+
+      <!-- ############################################################ -->
+      <!-- Group-0. -->
+      <a-entity
+        scale="1 1 1"
+        rotation="0 0 0"
+        class="groups"
+        id="Group-0"
+        visible="true"
+      >
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          position="0.42154 -1.02022 -3.28594"
+          rotation="-78.49349905953738 -9.68585152668657 101.4782739690055"
+          material="src: #Arrow-1; transparent:true"
+          the_dote="Name_of_dote: Dote-1  ; Group_to_activate: Group-1 ; The_rotation:-90"
+        >
+        </a-plane>
+      </a-entity>
+
+      <!-- Group-1. -->
+      <a-entity scale="0 0 0" class="groups" id="Group-1" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          position="-0.47586 -1.16781 2.42653"
+          rotation="-76.8577045544389 138.66781853535696 -37.663380662924666"
+          material="src: #Arrow-1; transparent:true"
+          the_dote="Name_of_dote: Dote-0  ; Group_to_activate: Group-0 ; The_rotation: -90"
+        >
+        </a-plane>
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          position="2.49464 -1.16781 0.28626"
+          rotation="-61.55686663547026 -88.48760188000433 -173.53631107363347"
+          material="src: #Arrow-1; transparent:true"
+          the_dote="Name_of_dote: Dote-2  ; Group_to_activate: Group-2 ; The_rotation: -90"
+        >
+        </a-plane>
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          position="-0.68711 -1.16781 -2.82591"
+          rotation="-74.06396234538099 58.97798359958642 25.805446134897153"
+          material="src: #Arrow-1; transparent:true"
+          the_dote="Name_of_dote: Dote-3  ; Group_to_activate: Group-3 ; The_rotation: -90"
+        >
+        </a-plane>
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          position="-3.8527 -1.16781 -2.82591"
+           rotation="-60.725504874735435 73.17931550969901 10.538412725841232"
+          material="src: #Arrow-1; transparent:true"
+          the_dote="Name_of_dote: Dote-6  ; Group_to_activate: Group-6 ; The_rotation: -90"
+        >
+        </a-plane>
+
+
+
+      </a-entity>
+
+      <!-- Group-2 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-2" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+          position="-3.2258 -1.16781 -1.05854"
+          rotation="-64.10767473939268 88.05501874468057 1.8116925482036632"
+          the_dote="Name_of_dote: Dote-1 ; Group_to_activate: Group-1 ; The_rotation: -90"
+        >
+        </a-plane>
+      </a-entity>
+      <!-- Group-3 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-3" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+          position="0.43978 -1.08203 2.42841"
+          rotation="-72.46999375932704 -178.59782023581917 97.10030345641087"
+          the_dote="Name_of_dote: Dote-1 ; Group_to_activate: Group-1 ; The_rotation: -90"
+        >
+        </a-plane>
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          position="3.59468 -1.1921 -0.67689"
+          rotation="-32.41336838614093 -75.56453881082862 174.96125711012385"
+          material="src: #Arrow-1; transparent:true"
+          the_dote="Name_of_dote: Dote-4  ; Group_to_activate: Group-4 ; The_rotation: -90"
+        >
+        </a-plane>
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          position="-3.26436 -1.1921 0.03059"
+          rotation="-62.15560753138196 87.19558205198433 -0.5305589182911422"
+          material="src: #Arrow-1; transparent:true"
+          the_dote="Name_of_dote: Dote-6  ; Group_to_activate: Group-6 ; The_rotation: -90"
+        >
+        </a-plane>
+      </a-entity>
+      <!-- Group-4 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-4" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+          position="1.3722 -1.35697 -5.96366"
+          rotation="-74.1012046020645 -39.145049521132975 -31.716078749466718"
+          the_dote="Name_of_dote: Dote-5 ; Group_to_activate: Group-5 ; The_rotation: -90"
+        >
+        </a-plane>
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+          position="-3.39952 -1.47976 0.16641"
+          rotation="-57.94150294819475 108.58982612216928 174.95094386981148"
+          the_dote="Name_of_dote: Dote-3 ; Group_to_activate: Group-3 ; The_rotation: -90"
+        >
+        </a-plane>
+      </a-entity>
+      <!-- Group-5 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-5" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+          position="-2.02531 -1.56132 5.28962"
+          rotation="-84.30099927098341 101.93778612070041 168.4673534601111"
+          the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation: -90"
+        >
+        </a-plane>
+      </a-entity>
+      <!-- Group-6 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-6" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+       position="4.5147 -1.22481 2.00134"
+           rotation="-76.13692364816431 -63.358818901156695 -24.45842235854458"
+                     the_dote="Name_of_dote: Dote-1 ; Group_to_activate: Group-1 ; The_rotation: -90"
+        >
+        </a-plane>
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+  position="4.29481 -1.22481 -1.01813"
+   rotation="-58.776875413495496 -92.2714151590483 2.2906852649330314" 
+             the_dote="Name_of_dote: Dote-3 ; Group_to_activate: Group-3 ; The_rotation: -90"
+        >
+        </a-plane>
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+      position="-4.84452 -1.22481 1.13911" 
+          rotation="-76.10999463179317 88.94367628492847 -178.93242758817556"
+                       the_dote="Name_of_dote: Dote-7 ; Group_to_activate: Group-7 ; The_rotation: -90"
+        >
+        </a-plane>
+
+     
+
+      </a-entity>
+      <!-- Group-7 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-7" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+  position="4.54713 -1.31386 -2.31384"
+  rotation="-76.72535130376367 -95.13219343013651 5.343404397390057" 
+          the_dote="Name_of_dote: Dote-6 ; Group_to_activate: Group-6 ; The_rotation: -90"
+        >
+        </a-plane>
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+         position="-2.92218 -1.31386 0.03219" 
+         rotation="-80.14304455171903 96.89117386118812 173.5575105120533"
+          the_dote="Name_of_dote: Dote-8 ; Group_to_activate: Group-8 ; The_rotation: -90"
+        >
+        </a-plane>
+
+      </a-entity>
+      <!-- Group-8 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-8" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+          position="-3.23955 -1.11565 -0.22783"
+           rotation="-60.404075551667034 92.38371488689394 178.2746720393654" 
+          the_dote="Name_of_dote: Dote-9 ; Group_to_activate: Group-9 ; The_rotation: -90"
+        >
+        </a-plane>
+
+
+      
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+   position="3.36648 -1.06648 -0.91218" 
+   rotation="-60.4814248540097 -76.65602341055285 -12.277912591858412"
+          the_dote="Name_of_dote: Dote-7 ; Group_to_activate: Group-7 ; The_rotation: -90"
+        >
+        </a-plane>
+
+
+      </a-entity>
+      <!-- Group-9 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-9" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+           position="-2.91245 -0.82669 -0.27024"
+            rotation="-76.77405271634979 74.48164857803137 -164.59186693384618"
+          the_dote="Name_of_dote: Dote-10 ; Group_to_activate: Group-10 ; The_rotation: -90"
+        >
+        </a-plane>
+
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+   position="3.60949 -1.09989 -0.03683" 
+   rotation="-60.58283838374785 -82.84110280899009 -5.961052900541086" 
+          the_dote="Name_of_dote: Dote-8 ; Group_to_activate: Group-8 ; The_rotation: -90"
+        >
+        </a-plane>
+
+
+
+      </a-entity>
+      <!-- Group-10 -->
+      <a-entity scale="0 0 0" class="groups" id="Group-10" visible="false">
+        <a-plane
+          data-clickable
+          scale="0.9 0.9 0.9"
+          opacity=".5"
+          class="Dote"
+          material="src: #Arrow-1; transparent:true"
+   position="3.94499 -1.96413 -0.32457"
+    rotation="-67.12085978398568 -93.02886536421126 3.1386628017266496"
+          the_dote="Name_of_dote: Dote-9 ; Group_to_activate: Group-9 ; The_rotation: -90"
+        >
+        </a-plane>
+
+
+      </a-entity>
+ 
+      </a-entity>
+
+      <!-- ############################################################ -->
+      <!-- ############################################################ -->
+      <!-- ############################################################ -->
+    </a-scene>
+    <script>
+      let loaderContainer = document.querySelector(".hover_loader_container");
+      let groups = document.querySelectorAll(".groups");
+      let the_sky = document.querySelector("#image-360");
+      let the_cursor = document.querySelector(".a-mouse-cursor-hover");
+      let theBlachHover = document.querySelector(".the_blach_hover");
+      let img_1 = document.querySelector("#Scene-0");
+
+      const setStrat = (theStrat) => {
+        the_sky.setAttribute("src", `#Scene-${theStrat}`);
+        let the_group_to_activate = document.querySelector(
+          `#Group-${theStrat}`
+        );
+        groups.forEach((group) => {
+          group.setAttribute("visible", "false");
+          group.setAttribute("scale", "0 0 0");
+        });
+        the_group_to_activate.setAttribute("visible", "true");
+        the_group_to_activate.setAttribute("scale", "1 1 1");
+      };
+      setStrat(1);
+
+      AFRAME.registerComponent("the_dote", {
+        schema: {
+          Name_of_dote: { type: "string", default: "#Name" },
+          Group_to_activate: { type: "string", default: "#Position" },
+          The_rotation: { type: "string", default: "0" },
+        },
+
+        init: function () {
+          var stringTqoLog = this.data;
+          let Dote_Name = this.data.Name_of_dote;
+          let Group_to_activate = this.data.Group_to_activate;
+          let TheRotation = this.data.The_rotation;
+          let The_Arrow = this.el;
+          this.el.setAttribute(
+            "event-set__mouseleave",
+            "scale: 0.9 0.9 0.9 ; opacity : 0.5 "
+          );
+          this.el.setAttribute(
+            "event-set__mouseenter",
+            "scale: 1.1 1.1 1.1 ; opacity : 1"
+          );
+          this.el.addEventListener("click", (theDote) => {
+            the_sky.setAttribute("rotation", `0 ${TheRotation} 0`);
+
+            theBlachHover.style.transitionDelay = "0s , 0s";
+            theBlachHover.style.opacity = "1";
+            theBlachHover.style.height = "100vh";
+
+            setTimeout(() => {
+              theBlachHover.style.transitionDelay = "0s , .6s";
+
+              switch (Dote_Name) {
+                case "Dote-0":
+                  the_sky.setAttribute("src", "#Scene-0");
+                  break;
+                case "Dote-1":
+                  the_sky.setAttribute("src", "#Scene-1");
+                  break;
+                case "Dote-2":
+                  the_sky.setAttribute("src", "#Scene-2");
+                  break;
+                case "Dote-3":
+                  the_sky.setAttribute("src", "#Scene-3");
+                  break;
+                case "Dote-4":
+                  the_sky.setAttribute("src", "#Scene-4");
+                  break;
+                case "Dote-5":
+                  the_sky.setAttribute("src", "#Scene-5");
+                  break;
+                case "Dote-6":
+                  the_sky.setAttribute("src", "#Scene-6");
+                  break;
+                case "Dote-7":
+                  the_sky.setAttribute("src", "#Scene-7");
+                  break;
+                case "Dote-8":
+                  the_sky.setAttribute("src", "#Scene-8");
+                  break;
+                case "Dote-9":
+                  the_sky.setAttribute("src", "#Scene-9");
+                  break;
+                case "Dote-10":
+                  the_sky.setAttribute("src", "#Scene-10");
+                  break;
+                default:
+                  break;
+              }
+              let the_group_to_activate = document.querySelector(
+                `#${Group_to_activate}`
+              );
+
+              groups.forEach((group) => {
+                group.setAttribute("visible", "false");
+                group.setAttribute("scale", "0 0 0");
+              });
+              the_group_to_activate.setAttribute("visible", "true");
+              the_group_to_activate.setAttribute("scale", "1 1 1");
+
+              theBlachHover.style.opacity = "0";
+              theBlachHover.style.height = "0vh";
+            }, 1200);
+          });
+        },
+      });
+      const theInt = setInterval(intFunc, 4000);
+
+      function intFunc() {
+        if (img_1.complete) {
+          loaderContainer.style.display = "none";
+          console.log(img_1.complete);
+          clearInterval(theInt);
+        } else {
+          console.log(img_1.complete);
+        }
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
